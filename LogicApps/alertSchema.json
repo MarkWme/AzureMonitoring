@@ -1,0 +1,41 @@
+{
+    "schemaId": "AzureMonitorMetricAlert",
+    "data": {
+        "Version": "2.0",
+        "Properties": null,
+        "Status": "Activated",
+        "Context": {
+            "Timestamp": "2018-09-20T09:44:40.5333236Z",
+            "Id": "/subscriptions/<AzureSubscriptionId>/resourceGroups/<ResourceGroupName>/providers/microsoft.insights/metricAlerts/MonitorVM01%20CPU%20Utilisation%20greater%20than%2070%20per%20cent",
+            "name": "MonitorVM01 CPU Utilisation greater than 70 per cent",
+            "Description": "",
+            "ConditionType": "SingleResourceMultipleMetricCriteria",
+            "Severity": "2",
+            "Condition": {
+                "WindowSize": "PT1M",
+                "AllOf": [
+                    {
+                        "MetricName": "Percentage CPU",
+                        "MetricNamespace": "Microsoft.Compute/virtualMachines",
+                        "Operator": "GreaterThan",
+                        "Threshold": "70",
+                        "TimeAggregation": "Average",
+                        "MetricValue": 96.43,
+                        "Dimensions": [
+                            {
+                                "Name": "ResourceId",
+                                "Value": "0205c3e6-7742-4dba-8831-cd6da99c47ce"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "SubscriptionId": "<AzureSubscriptionId>",
+            "ResourceGroupName": "<ResourceGroupName>",
+            "ResourceName": "<ResourceName>",
+            "ResourceType": "Microsoft.Compute/virtualMachines",
+            "ResourceId": "/subscriptions/<AzureSubscriptionId>/resourceGroups/<ResourceGroupName>/providers/Microsoft.Compute/virtualMachines/<VirtualMachineName>",
+            "PortalLink": "https://portal.azure.com/#resource/subscriptions/<AzureSubscriptionId>/resourceGroups/<ResourceGroupName>/providers/Microsoft.Compute/virtualMachines/<VirtualMachineName>"
+        }
+    }
+}
