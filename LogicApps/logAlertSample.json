@@ -1,0 +1,146 @@
+{
+    "schemaId": "Microsoft.Insights/LogAlert",
+    "data": {
+        "WorkspaceId": "12aab677-e75d-42d3-9fa5-6ec18e523301",
+        "AlertRuleName": "Available Memory",
+        "SearchQuery": "Perf | search * | where CounterName contains \"Available Memory\" and CounterValue  <= 80\n",
+        "SearchResult": {
+            "tables": [
+                {
+                    "name": "PrimaryResult",
+                    "columns": [
+                        {
+                            "name": "$table",
+                            "type": "string"
+                        },
+                        {
+                            "name": "TenantId",
+                            "type": "string"
+                        },
+                        {
+                            "name": "Computer",
+                            "type": "string"
+                        },
+                        {
+                            "name": "ObjectName",
+                            "type": "string"
+                        },
+                        {
+                            "name": "CounterName",
+                            "type": "string"
+                        },
+                        {
+                            "name": "InstanceName",
+                            "type": "string"
+                        },
+                        {
+                            "name": "CounterValue",
+                            "type": "real"
+                        },
+                        {
+                            "name": "TimeGenerated",
+                            "type": "datetime"
+                        },
+                        {
+                            "name": "SourceSystem",
+                            "type": "string"
+                        },
+                        {
+                            "name": "CounterPath",
+                            "type": "string"
+                        },
+                        {
+                            "name": "MG",
+                            "type": "string"
+                        },
+                        {
+                            "name": "Min",
+                            "type": "real"
+                        },
+                        {
+                            "name": "Max",
+                            "type": "real"
+                        },
+                        {
+                            "name": "SampleCount",
+                            "type": "int"
+                        },
+                        {
+                            "name": "BucketStartTime",
+                            "type": "datetime"
+                        },
+                        {
+                            "name": "BucketEndTime",
+                            "type": "datetime"
+                        },
+                        {
+                            "name": "StandardDeviation",
+                            "type": "real"
+                        },
+                        {
+                            "name": "Type",
+                            "type": "string"
+                        },
+                        {
+                            "name": "_ResourceId",
+                            "type": "string"
+                        }
+                    ],
+                    "rows": [
+                        [
+                            "Perf",
+                            "12aab677-e75d-42d3-9fa5-6ec18e523301",
+                            "x-vl-euw-monitorvm-01",
+                            "Memory",
+                            "% Available Memory",
+                            "Memory",
+                            52,
+                            "2018-09-20T12:17:44.62Z",
+                            "OpsManager",
+                            "\\\\x-vl-euw-monitorvm-01\\Memory(Memory)\\% Available Memory",
+                            "00000000-0000-0000-0000-000000000002",
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            "Perf",
+                            "/subscriptions/808121c2-95b0-4e15-8dbc-cb6de76a956a/resourcegroups/x-rg-euw-monitor/providers/microsoft.compute/virtualmachines/x-vl-euw-monitorvm-01"
+                        ],
+                        [
+                            "Perf",
+                            "12aab677-e75d-42d3-9fa5-6ec18e523301",
+                            "x-vl-euw-monitorvm-01",
+                            "Memory",
+                            "% Available Memory",
+                            "Memory",
+                            44,
+                            "2018-09-20T12:18:44.623Z",
+                            "OpsManager",
+                            "\\\\x-vl-euw-monitorvm-01\\Memory(Memory)\\% Available Memory",
+                            "00000000-0000-0000-0000-000000000002",
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            "Perf",
+                            "/subscriptions/808121c2-95b0-4e15-8dbc-cb6de76a956a/resourcegroups/x-rg-euw-monitor/providers/microsoft.compute/virtualmachines/x-vl-euw-monitorvm-01"
+                        ]
+                    ]
+                }
+            ]
+        },
+        "SearchIntervalStartTimeUtc": "2018-09-20T12:16:02",
+        "SearchIntervalEndtimeUtc": "2018-09-20T12:21:02",
+        "AlertThresholdOperator": "Greater Than",
+        "AlertThresholdValue": 1,
+        "ResultCount": 2,
+        "SearchIntervalInSeconds": 300,
+        "LinkToSearchResults": "https://12aab677-e75d-42d3-9fa5-6ec18e523301.portal.mms.microsoft.com/#Workspace/search/index?_timeInterval.intervalEnd=2018-09-20T12%3a21%3a02.0000000Z&_timeInterval.intervalDuration=300&q=Perf%20%7C%20search%20%2A%20%7C%20where%20CounterName%20contains%20%22Available%20Memory%22%20and%20CounterValue%20%20%3C%3D%2080%0A",
+        "Description": "Percentage available memory less than 25%",
+        "Severity": "Warning"
+    }
+}
